@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/88dd62c9ea.js" crossorigin="anonymous"></script>
     <title>AhmedMBD</title>
 </head>
+
 <body>
-    <nav>
-        <figure>
+    <header id="home">
+        <nav>
+            <figure>
                 <img id="navbar-logo" src="./assets/AhmedMDB-Logo.svg">
-        </figure>
-    </nav>
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link--list-item">
+                    <a href="#home" class="nav__link--anchor link__hover-effect link__hover-effect--black">Home</a>
+                </li>
+                <li class="nav__link--list-item">
+                    <a href="#movies" class="nav__link--anchor link__hover-effect link__hover-effect--black">Find your
+                        movie</a>
+                </li>
+                <li class="nav__link--list-item click">
+                    <a href="#" class="nav__link--anchor">
+                        <button class="nav__link--contact-button">Contact</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="landing-page">
+        <div class="landing-page__wrapper">
+            <div class="landing-page__wrapper--intro">
+                <h1 class="red">The best movie database</h1>
+                <h3>Find more information about your favorite <span class="red">movie</span></h3>
+            </div>
+            <div class="landing-page__input--wrapper">
+                <input class="movie-search" placeholder="Search by Movie Name" type="text">
+                <button class="movie-search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <figure>
+        <img src="./assets/popcorn-soda-drink-clapperboard-cute-260nw-2227608501.webp">
+    </figure>
+
 </body>
+
 </html>
