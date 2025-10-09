@@ -134,3 +134,23 @@ nav {
     border-radius: 12px;
     padding-left: 12px;
 }
+
+/* MOVIE AREA */
+.search-filter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 24px;
+}
+
+.year-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.year-filter__input {
+    font-size: 24px;
+    margin-top: 8px;
+    padding-left: 4px;
+    border-radius: 8px;
+}
