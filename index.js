@@ -1,17 +1,23 @@
-var movieName = ""
+let movieName = localStorage.getItem("movieName") || ""
 
-window.onload = function () {
-    let movieSearchInput = document.querySelector(".movie-search")
+let movieSearchInput = document.querySelector(".movie-search")
+let movieSearchButton = document.querySelector(".movie-search-button")
 
-    movieSearchInput.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-            movieName = movieSearchInput.value
-            localStorage.setItem("movieName", movieName)
-            searchMovie(movieName)
-        }
-    })
-}
+movieSearchInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        movieName = movieSearchInput.value
+        localStorage.setItem("movieName", movieName)
+        loadMoviePage()
+    }
+})
 
-function searchMovie(movieName) {
+movieSearchButton.addEventListener("click", () => {
+    movieName = movieSearchInput.value
+    localStorage.setItem("movieName", movieName)
+    loadMoviePage()
+})
+
+
+function loadMoviePage() {
     window.location.href = `${window.location.origin}/movie-page.html`
 }
